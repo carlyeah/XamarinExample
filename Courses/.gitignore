@@ -1,11 +1,8 @@
-﻿using System;
-namespace Courses
-{
-	public class 
-	{
-		public ()
-		{
-		}
-	}
-}
+﻿# Created by http://www.gitignore.io
 
+#!! ERROR: inte is undefined. Use list command to see defined gitignore types !!#
+
+### XamarinStudio ###
+bin/
+obj/
+*.userprefs
