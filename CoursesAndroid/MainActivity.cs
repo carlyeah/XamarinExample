@@ -16,6 +16,8 @@ namespace CoursesAndroid
 		Button buttonPrev;
 		Button buttonNext;
 		TextView titleLabel;
+		TextView subtitleLabel;
+		ImageView image;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -31,6 +33,10 @@ namespace CoursesAndroid
 			buttonNext = FindViewById<Button> (Resource.Id.nextButton);
 
 			titleLabel = FindViewById<TextView> (Resource.Id.titleLabel);
+
+			subtitleLabel = FindViewById<TextView> (Resource.Id.subTitleLabel);
+
+			image = FindViewById<ImageView> (Resource.Id.photoView);
 
 			buttonPrev.Click += buttonPrev_Click;
 			buttonNext.Click += buttonNext_Click;

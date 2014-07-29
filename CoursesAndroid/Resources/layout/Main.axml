@@ -18,12 +18,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/nextButton" />
-       
     <TextView
         android:text="Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/prevButton"
+        android:id="@+id/subTitleLabel"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/subTitleLabel"
         android:id="@+id/titleLabel"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:src="@drawable/noimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/titleLabel"
+        android:id="@+id/photoView"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="0.0dp" />
 </RelativeLayout>
