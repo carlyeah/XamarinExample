@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" PreferredExecutionTarget="Android.04b3d8652524a17a" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CoursesAndroid\Resources\layout\Main.axml">
+    <Files>
+      <File FileName="CoursesAndroid\MainActivity.cs" Line="31" Column="23" />
+      <File FileName="CoursesAndroid\Resources\layout\Main.axml" Line="11" Column="44" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.CoursesAndroid MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+</Properties>

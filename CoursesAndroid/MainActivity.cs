@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CoursesLibrary;
 
 namespace CoursesAndroid
 {
@@ -18,6 +19,7 @@ namespace CoursesAndroid
 		TextView titleLabel;
 		TextView subtitleLabel;
 		ImageView image;
+		CourseManager courseManager;
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -41,16 +43,30 @@ namespace CoursesAndroid
 			buttonPrev.Click += buttonPrev_Click;
 			buttonNext.Click += buttonNext_Click;
 
+			courseManager = new CourseManager ();
+			courseManager.MoveFirst ();
+
 		}
 
 		void buttonPrev_Click(object sender, EventArgs e)
 		{
-			titleLabel.Text = "Prev clicked";
+			courseManager.MovePrev ();
+			UpdateUI ();
+
 		}
 
 		void buttonNext_Click(object sender, EventArgs e)
 		{
-			titleLabel.Text = "Next clicked";
+			courseManager.MoveNext ();
+			UpdateUI ();
+
+		}
+
+		private void UpdateUI()
+		{
+
+			titleLabel.Text = courseManager.Current.Title;
+			subtitleLabel.Text = courseManager.Current.Description;
 		}
 	}
 }

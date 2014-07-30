@@ -61,4 +61,10 @@
     <AndroidResource Include="Resources\drawable\noimage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\CoursesLibrary\CoursesLibrary.csproj">
+      <Project>{88D1954D-3670-4025-8B6E-D5BD1D750AE3}</Project>
+      <Name>CoursesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
