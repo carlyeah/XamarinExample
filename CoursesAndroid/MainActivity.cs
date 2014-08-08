@@ -10,7 +10,7 @@ using CoursesLibrary;
 
 namespace CoursesAndroid
 {
-	[Activity (Label = "Courses", MainLauncher = true, Icon = "@drawable/icon")]
+//	[Activity (Label = "Courses", MainLauncher = true, Icon = "@drawable/icon")]
 
 	public class MainActivity : Activity
 	{
@@ -30,9 +30,6 @@ namespace CoursesAndroid
 
 			// Get our button from the layout resource,
 			// and attach an event to it
-			buttonPrev = FindViewById<Button> (Resource.Id.prevButton);
-
-			buttonNext = FindViewById<Button> (Resource.Id.nextButton);
 
 			titleLabel = FindViewById<TextView> (Resource.Id.titleLabel);
 
@@ -67,6 +64,8 @@ namespace CoursesAndroid
 
 			titleLabel.Text = courseManager.Current.Title;
 			subtitleLabel.Text = courseManager.Current.Description;
+			buttonPrev.Enabled = courseManager.CanMovePrev;
+			buttonNext.Enabled = courseManager.CanMoveNext;
 		}
 	}
 }

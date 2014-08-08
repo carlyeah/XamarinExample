@@ -33,6 +33,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Course.cs" />
     <Compile Include="CourseManager.cs" />
+    <Compile Include="CourseCategory.cs" />
+    <Compile Include="CourseCategoryManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
